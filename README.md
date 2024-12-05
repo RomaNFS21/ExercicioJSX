@@ -13,4 +13,10 @@
 - Apos as mudanças acima nossa pagina fica totalmente em branco por não ter nenhuma informação configurada
 
 ### 3. Configuração dos componentes 
-- 
+- Criada as suas respectivas funções do **Header.js** (Exibir o titulo do projeto) e do **TaskContainer.jsx** (Exibir as tarefas determinadas) suas funções foram exportadas para o arquivo **App.js** tendo como resultado a baixo na imagem
+![Primeiras Configurações](task-manager/readme-images/PrimeirasConfigurações.png)
+
+### 4. Aprimoramento do componente Taskontainer
+- Criado um novo component com arquivo nomeado de **Task.js** para ser o criador dos elementos das tarefas
+- Modificação do **TaskContainer.jsx** onde as tarefas agoras estão agrupadas num array em forma de dicionario e a função **Task** é chamada para formatar as informações contidas no array
+- Visualmente não ocorrem alterações na exibição dos componentes por ter mantido o mesmo formato de exibição
