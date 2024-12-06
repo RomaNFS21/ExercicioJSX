@@ -20,3 +20,20 @@
 - Criado um novo component com arquivo nomeado de **Task.js** para ser o criador dos elementos das tarefas
 - Modificação do **TaskContainer.jsx** onde as tarefas agoras estão agrupadas num array em forma de dicionario e a função **Task** é chamada para formatar as informações contidas no array
 - Visualmente não ocorrem alterações na exibição dos componentes por ter mantido o mesmo formato de exibição
+
+# Aula 17 - 06/12/24
+
+### 1. Alterações no TaskContainer.jsx
+- Foi adicionado ao dicionario de cada task a informação **state** para atraves de um dado booleam informar se a task foi feita ou não
+
+### 2. Alterações no Task.js
+- Ao fuction Task foi adicionado o parametro **state** para ser usado na verificação do estado da task
+- No return da função Task na organização dos elementos a serem gerados foi atribuido uma verificação do parametro state da task, caso fosse TRUE a descrição da task recebe um sinal de CHECK em caso de FALSE recebe um X 
+![Check And Cross](task-manager/readme-images/CheckAndCross.png)
+
+### 3. Novo componente (Conclude)
+- Criado o componente **Conclude** onde é gerado dois botões sendo um o **Concluir** com intuito do usuario informar que concluiu as atividades e o segundo botão **Gerar Tarefas** com intuito de gerar novas tarefas
+![Buttons](task-manager/readme-images/Buttons.png)
+
+### 4. Alteração no App.js
+- Adicionado o componente Conclude
