@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Task({ title, description }) {
+function Task({ title, description, state }) {
     return (
         <div className="task">
             <h3>{title}</h3>
-            <p>{description}</p>
+            <p>{state ? description + " ✅ " : description + " ❌"}</p>
         </div>
     );
 }
